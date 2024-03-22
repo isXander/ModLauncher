@@ -1,0 +1,26 @@
+[versions]
+fabric_loader = "0.15.7"
+tiny_mappings_parser = "0.3.0+build.17"
+mixin = "0.12.5+mixin.0.8.5"
+guava = "33.0.0-jre"
+tiny_remapper = "0.10.1"
+access_widener = "2.1.0"
+asm = "9.6"
+
+[libraries]
+fabric_loader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "fabric_loader" }
+tiny_mappings_parser = { group = "net.fabricmc", name = "tiny-mappings-parser", version.ref = "tiny_mappings_parser" }
+mixin = { group = "net.fabricmc", name = "sponge-mixin", version.ref = "mixin" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
+tiny_remapper = { group = "net.fabricmc", name = "tiny-remapper", version.ref = "tiny_remapper" }
+access_widener = { group = "net.fabricmc", name = "access-widener", version.ref = "access_widener" }
+asm = { group = "org.ow2.asm", name = "asm", version.ref = "asm" }
+asm_analysis = { group = "org.ow2.asm", name = "asm-analysis", version.ref = "asm" }
+asm_commons = { group = "org.ow2.asm", name = "asm-commons", version.ref = "asm" }
+asm_tree = { group = "org.ow2.asm", name = "asm-tree", version.ref = "asm" }
+asm_util = { group = "org.ow2.asm", name = "asm-util", version.ref = "asm" }
+
+[bundles]
+asm = ["asm", "asm_analysis", "asm_commons", "asm_tree", "asm_util"]
+
+[plugins]
